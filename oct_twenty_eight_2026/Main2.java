@@ -3,6 +3,34 @@ package oct_twenty_eight_2026;
 import java.util.Scanner;
 
 public class Main2 {
+
+    /*
+    动态规划（DP）问题，“编辑距离”（Edit Distance）或Levenshtein距离。
+
+       依旧是字符串处理，设A和B是两个字符串。我们要用最少的字符操作次数，
+       将字符串A转换为字符串B。这里所说的字符操作共有三种：
+
+        1. 删除一个字符；
+        2. 插入一个字符；
+        3. 将一个字符改为另一个字符
+
+        对任给的两个字符串A和B，计算出将字符串A变换为字符串B所用的最少字符操作次数。
+
+        输入格式
+        第一行为字符串A；第二行为字符串B；字符串A和B的长度均小于200。
+
+        输出格式
+        只有一个正整数，为最少字符操作次数。
+
+        样例输入
+        sfdxbqw
+        gfdgw
+
+        样例输出
+        4
+     */
+
+    //dp动态规划
     public static void main(String[] args){
         Scanner sc =new Scanner(System.in);
         String A = sc.nextLine();
